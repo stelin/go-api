@@ -1,7 +1,11 @@
 package main
 
 import (
+	_ "api/pool/mgo"
+	_ "api/pool/mysql"
+	_ "api/pool/redis"
 	_ "api/routers"
+
 	"fmt"
 	"runtime"
 

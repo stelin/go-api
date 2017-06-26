@@ -18,4 +18,9 @@ func (this *UserData) GetUserInfos(uids ...int) {
 	userDao.Add("stelin", 18)
 	userDao.GetById(790)
 	fmt.Println(userDao)
+
+	userExtDao := &dao.UserExt{}
+	userExtDao.AddExtInfo(8, "i like football")
+	userExtDao.GetInfoLevel(18)
+	userExtDao.GetListByLevel(18)
 }
